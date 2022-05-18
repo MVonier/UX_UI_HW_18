@@ -15,7 +15,7 @@ header {
    height: auto !important;
 }
 
-nav {
+ nav {
     vertical-align: top;
     max-width: 73%;
     padding: 1%;
@@ -55,13 +55,12 @@ nav {
     background-color: #ffffff;
   }
   
-.flex-card {
+  .flex-card {
   background-color: #282828;
   padding: 33px;
   margin: 15px;
   width: 33%;
-  text-align: center;
-}
+  text-align: center; }
 
 h1 {
   text-align: center;
@@ -78,6 +77,21 @@ h3 {
   p {
     color: white;
   }
+
+  .workGrid {
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    background-color: #ffffff;
+  }
+  
+.work-card {
+  background-color: #282828;
+  padding: 33px;
+  margin: 15px;
+  width: 33%;
+  text-align: center;
+}
 
   button {
     background-color: #282828;
