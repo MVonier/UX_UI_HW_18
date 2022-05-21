@@ -99,18 +99,47 @@ h3 {
     text-align: center;
   }
   
-  .work-card {
-    grid-row: auto / span 1;
-    grid-column: auto / span 1;
-  }
-  
-.workGrid1 {
-  display: grid;
-  grid-template-columns: myArea myArea;
-  grid-template-rows: myArea my Area myArea;
-  gap: 10px;
+ /* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
   background-color: #282828;
-  padding: 33px;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px 350px;
+  grid-template-areas:
+  "img1 content1"
+  "img2 content2"
+  ;
+}
+.workGrid img {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img1, .img2, .content1, .content2 {
+  padding: 80px;
+}
+.content1 {
+  grid-area: content1;
+}
+.content2 {
+  grid-area: content2;
+}
+.content3 {
+  grid-area: content3;
 }
 
 
