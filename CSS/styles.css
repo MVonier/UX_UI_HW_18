@@ -78,27 +78,41 @@ h3 {
     color: white;
   }
 
-  .workGrid {
-    display: flex;
-    padding: 15px;
-    flex-direction: row;
-    background-color: #ffffff;
-  }
+
   
-.work-card {
-  background-color: #282828;
-  padding: 33px;
-  margin: 15px;
-  width: 33%;
-  text-align: center;
-}
 
   button {
     background-color: #282828;
     width: 222px;
     height: 48px;
     color: white;
+    align-items: center;
   }
+  
+.work-card {
+    display: grid;
+    grid-template-areas: myArea;
+    grid-area: 1 / 1 / span 1 / span 2;
+    background-color: #282828;
+    padding: 33px;
+    margin: 15px;
+    text-align: center;
+  }
+  
+  .work-card {
+    grid-row: auto / span 1;
+    grid-column: auto / span 1;
+  }
+  
+.workGrid1 {
+  display: grid;
+  grid-template-columns: myArea myArea;
+  grid-template-rows: myArea my Area myArea;
+  gap: 10px;
+  background-color: #282828;
+  padding: 33px;
+}
+
 
   .content {
     width: 500px;
